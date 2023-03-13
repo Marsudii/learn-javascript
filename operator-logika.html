@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <script>
+
+    const username = "marsudi";
+    const password = 123;
+    const cekUsername = username === "marsudi";
+    const cekPassword = password === "marsudi";
+
+    const cekLogin1 = cekUsername && cekPassword;
+
+    document.writeln("<p> " + cekLogin1 + "</p>"); //false
+
+
+
+    const userName = "marsudi";
+    const passWord = 123;
+    const cekUserName = username === "marsudii";
+    const cekPassWord = password === "marsudi";
+    const cekLogin2 = cekUserName || cekPassWord;
+
+    document.writeln("<p> " + cekLogin2 + "</p>"); //false
+
+
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

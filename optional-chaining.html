@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    
+    <script>
+
+        let person = {}
+        let country
+
+        //tanpa optional chaining
+        if(person.address !== undefined && person.address !== null){
+        country =person.address.country
+        }
+
+        document.writeln(`${country}`)
+
+
+        
+
+        //menggunakan optional chaining
+        let student = {
+            
+        }
+        alert(student?.age?.hobbie)
+    </script>
+</body>
+</html>

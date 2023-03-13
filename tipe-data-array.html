@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const arrayKosong = [];
+    let arrayNama = ["Marsudi", "Eko", "Budi", 1, true];
+    console.info(arrayNama);
+
+    //Add data array menggunakan push
+    arrayKosong.push('data ke 1',2);
+    arrayKosong.push('data ke 3',4);
+    arrayKosong.push('data ke 5',6);
+    console.table(arrayKosong);
+
+    // Mengambil Panjang Array length
+    const panjangArray = arrayKosong.length
+    console.info(`Panjang Array ${panjangArray}`)
+    
+    //Mendapat data di posisi index array[index]
+    const getDataArray = arrayKosong[0];
+    console.info(`Get Data Array posisi index ke-0 ${getDataArray}`);
+
+    //Mengubah data di posisi index
+    const changeData = arrayKosong[1] = "data ke 2";
+    console.table(arrayKosong);
+
+    //delete array 
+    const deleteData = delete arrayKosong[5];
+    console.table(arrayKosong)
+
+</script>
+</html>
